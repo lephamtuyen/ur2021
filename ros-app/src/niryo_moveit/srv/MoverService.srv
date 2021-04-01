@@ -1,0 +1,7 @@
+NiryoMoveitJoints joints_input
+geometry_msgs/Pose pick_pose
+geometry_msgs/Pose place_pose
+int32 robotNumber
+---
+moveit_msgs/RobotTrajectory[] trajectories
+int32 robotNumber

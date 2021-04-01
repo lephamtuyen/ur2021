@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/Scenes/one-robot-left-v2.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0

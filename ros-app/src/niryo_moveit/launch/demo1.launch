@@ -1,0 +1,15 @@
+<launch>
+    <arg name="urdf_without_meshes" default="false" />
+    <include file="$(find niryo_moveit)/launch/niryo_one_base1.launch" pass_all_args="true"/>
+
+    <include file="$(find niryo_moveit)/launch/controllers1.launch">
+        <arg name="simulation_mode" value="true" />
+    </include>
+
+    <!-- Moveit move_group -->
+    <include file="$(find niryo_moveit)/launch/move_group1.launch" />
+
+    <!-- Disable Moveit! controller timeout -->
+    <param name="move_group/trajectory_execution/execution_duration_monitoring" value="false" />
+
+</launch>
